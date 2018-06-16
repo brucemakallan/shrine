@@ -11,27 +11,15 @@
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
     </style>
 
-    <!-- Toolbar -->
-    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
-        <item name="android:background">?attr/colorAccent</item>
-        <item name="android:theme">@style/Theme.Shrine</item>
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="titleTextAppearance">@style/TextAppearance.Shrine.Toolbar</item>
-    </style>
-    <style name="TextAppearance.Shrine.Toolbar" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:textSize">16sp</item>
-    </style>
-
-    <!-- TextInput fields -->
     <style name="Widget.Shrine.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlineBox">
         <item name="hintTextAppearance">@style/TextAppearance.Shrine.TextInputLayout.HintText</item>
         <item name="android:paddingBottom">8dp</item>
     </style>
+
     <style name="TextAppearance.Shrine.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-    <!-- Buttons -->
     <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="backgroundTint">?attr/colorPrimaryDark</item>
@@ -39,19 +27,30 @@
             @animator/shr_next_button_state_list_anim
         </item>
     </style>
+
     <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-    <!-- App Title -->
+    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorAccent</item>
+        <item name="android:theme">@style/Theme.Shrine</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Shrine.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+    </style>
+
     <style name="TextAppearance.Shrine.Title" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-    <!-- Backdrop -->
     <style name="Widget.Shrine.Backdrop" parent="">
         <item name="android:background">?attr/colorAccent</item>
     </style>
+
 </resources>

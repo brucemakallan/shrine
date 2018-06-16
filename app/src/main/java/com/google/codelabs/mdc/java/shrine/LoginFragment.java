@@ -36,7 +36,6 @@ public class LoginFragment extends Fragment {
                 } else {
                     passwordTextInput.setError(null); // Clear the error
                     ((NavigationHost) getActivity()).navigateTo(new ProductGridFragment(), false); // Navigate to the next Fragment
-                    // The false parameter in navigateTo() tells the activity to not add the current fragment to the backstack, so the user will not be able to return to the login screen using their back key.
                 }
             }
         });
@@ -54,6 +53,10 @@ public class LoginFragment extends Fragment {
         return view;
     }
 
+    /*
+        In reality, this will have more complex logic including, but not limited to, actual
+        authentication of the username and password.
+     */
     private boolean isPasswordValid(@Nullable Editable text) {
         return text != null && text.length() >= 8;
     }
